@@ -1,0 +1,236 @@
+/* css/responsive.css */
+
+/* Large Tablets */
+
+@media (max-width:1024px){
+
+.hero{
+padding:30px;
+}
+
+.glass-card{
+max-width:600px;
+padding:35px;
+}
+
+.profile-ring{
+width:210px;
+height:210px;
+}
+
+#typing{
+font-size:34px;
+}
+
+.name{
+font-size:28px;
+}
+
+.subtitle{
+font-size:17px;
+}
+
+}
+
+/* Tablets */
+
+@media (max-width:768px){
+
+section{
+padding:80px 20px;
+}
+
+.glass-card{
+width:95%;
+padding:30px;
+border-radius:30px;
+}
+
+.profile-ring{
+width:190px;
+height:190px;
+}
+
+.profile-image{
+border-width:5px;
+}
+
+#typing{
+font-size:30px;
+line-height:1.4;
+}
+
+.name{
+font-size:26px;
+}
+
+.subtitle{
+font-size:16px;
+line-height:1.8;
+}
+
+#startBtn,
+#musicBtn{
+width:100%;
+padding:16px;
+font-size:17px;
+}
+
+.message-box{
+padding:30px 22px;
+font-size:17px;
+}
+
+.timeline-container{
+grid-template-columns:1fr;
+}
+
+.timeline-item{
+padding:25px;
+}
+
+.gallery-box img{
+width:270px;
+height:270px;
+}
+
+.skill span{
+font-size:18px;
+}
+
+.ending h1{
+font-size:42px;
+}
+
+.ending p{
+font-size:18px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.hero{
+padding:15px;
+}
+
+.glass-card{
+padding:22px;
+border-radius:25px;
+}
+
+.profile-ring{
+width:165px;
+height:165px;
+padding:6px;
+}
+
+.profile-image{
+border:4px solid white;
+}
+
+#typing{
+font-size:25px;
+}
+
+.name{
+font-size:23px;
+}
+
+.subtitle{
+font-size:15px;
+}
+
+h2{
+font-size:28px;
+}
+
+.message-box{
+font-size:16px;
+line-height:1.9;
+}
+
+.timeline-item h3{
+font-size:21px;
+}
+
+.timeline-item p{
+font-size:15px;
+}
+
+.gallery-box img{
+width:220px;
+height:220px;
+border-radius:22px;
+}
+
+.bar{
+height:15px;
+}
+
+#startBtn,
+#musicBtn{
+font-size:16px;
+padding:15px;
+}
+
+.ending h1{
+font-size:34px;
+}
+
+.ending p{
+font-size:16px;
+line-height:1.8;
+}
+
+.loader-heart{
+font-size:55px;
+}
+
+#loader h2{
+font-size:22px;
+}
+
+}
+
+/* Small Phones */
+
+@media (max-width:360px){
+
+.profile-ring{
+width:145px;
+height:145px;
+}
+
+#typing{
+font-size:21px;
+}
+
+.name{
+font-size:20px;
+}
+
+.subtitle{
+font-size:14px;
+}
+
+.gallery-box img{
+width:190px;
+height:190px;
+}
+
+.message-box{
+padding:20px;
+}
+
+.timeline-item{
+padding:20px;
+}
+
+section{
+padding:70px 15px;
+}
+
+}

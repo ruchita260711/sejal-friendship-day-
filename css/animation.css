@@ -1,0 +1,378 @@
+/* css/animation.css */
+
+@keyframes glow{
+    0%{
+        box-shadow:0 0 15px #ffffff,
+                   0 0 30px #4fc3f7;
+    }
+
+    50%{
+        box-shadow:0 0 35px #ffffff,
+                   0 0 60px #64b5f6,
+                   0 0 90px #ba68c8;
+    }
+
+    100%{
+        box-shadow:0 0 15px #ffffff,
+                   0 0 30px #4fc3f7;
+    }
+}
+
+.profile-ring{
+    animation:glow 3s ease-in-out infinite;
+}
+
+/* Floating */
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+.profile-ring{
+    animation:
+    glow 3s infinite,
+    floating 4s ease-in-out infinite;
+}
+
+/* Button */
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+#startBtn,
+#musicBtn{
+    animation:pulse 2s infinite;
+    transition:.4s;
+}
+
+#startBtn:hover,
+#musicBtn:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* Fade Up */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.message,
+.timeline,
+.gallery,
+.meter,
+.music,
+.ending{
+
+    animation:fadeUp 1.3s ease;
+
+}
+
+/* Sparkle */
+
+.sparkles::before{
+
+    content:"✨";
+
+    position:absolute;
+
+    top:10%;
+
+    left:15%;
+
+    font-size:30px;
+
+    animation:spark1 5s linear infinite;
+
+}
+
+.sparkles::after{
+
+    content:"✨";
+
+    position:absolute;
+
+    top:70%;
+
+    left:80%;
+
+    font-size:25px;
+
+    animation:spark2 6s linear infinite;
+
+}
+
+@keyframes spark1{
+
+0%{
+
+opacity:0;
+
+transform:translateY(0);
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translateY(-150px);
+
+}
+
+}
+
+@keyframes spark2{
+
+0%{
+
+opacity:0;
+
+transform:translateY(0);
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translateY(-200px);
+
+}
+
+}
+
+/* Hearts */
+
+.floating-hearts::before{
+
+content:"💙";
+
+position:absolute;
+
+left:20%;
+
+bottom:-50px;
+
+font-size:35px;
+
+animation:heart1 8s linear infinite;
+
+}
+
+.floating-hearts::after{
+
+content:"🤍";
+
+position:absolute;
+
+right:18%;
+
+bottom:-60px;
+
+font-size:30px;
+
+animation:heart2 10s linear infinite;
+
+}
+
+@keyframes heart1{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+@keyframes heart2{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(-360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* Image Hover */
+
+.gallery-box img{
+
+transition:.5s;
+
+}
+
+.gallery-box img:hover{
+
+transform:scale(1.08) rotate(2deg);
+
+}
+
+/* Glass Hover */
+
+.glass-card,
+.message-box,
+.timeline-item{
+
+transition:.5s;
+
+}
+
+.glass-card:hover,
+.message-box:hover,
+.timeline-item:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+}
+
+/* Title */
+
+@keyframes textGlow{
+
+0%{
+
+text-shadow:0 0 5px white;
+
+}
+
+50%{
+
+text-shadow:0 0 25px #64b5f6;
+
+}
+
+100%{
+
+text-shadow:0 0 5px white;
+
+}
+
+}
+
+#typing,
+.name{
+
+animation:textGlow 2s infinite;
+
+}
+
+/* Loader */
+
+.loader-heart{
+
+animation:loaderBeat 1s infinite;
+
+}
+
+@keyframes loaderBeat{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.35);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}

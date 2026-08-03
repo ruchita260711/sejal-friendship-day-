@@ -1,0 +1,243 @@
+/* css/style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#87CEEB,#C8A2FF,#E6E6FA);
+    overflow-x:hidden;
+    color:#ffffff;
+}
+
+/* Loader */
+
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    background:#0f172a;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.loader-heart{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+/* Background */
+
+.stars,
+.sparkles,
+.floating-hearts{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.glass-card{
+    width:90%;
+    max-width:500px;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(20px);
+    border-radius:35px;
+    padding:40px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+.profile-ring{
+    width:230px;
+    height:230px;
+    margin:auto;
+    border-radius:50%;
+    padding:8px;
+    background:linear-gradient(45deg,#ffffff,#4fc3f7,#b388ff,#ffffff);
+}
+
+.profile-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #fff;
+}
+
+#typing{
+    margin-top:30px;
+    font-size:38px;
+    font-weight:700;
+}
+
+.name{
+    margin-top:15px;
+    font-size:30px;
+    color:#ffffff;
+}
+
+.subtitle{
+    margin-top:20px;
+    font-size:17px;
+    line-height:1.8;
+}
+
+#startBtn{
+    margin-top:30px;
+    padding:16px 45px;
+    border:none;
+    border-radius:50px;
+    font-size:18px;
+    cursor:pointer;
+    background:#ffffff;
+    color:#2196f3;
+    font-weight:600;
+}
+
+/* Sections */
+
+section{
+    padding:100px 30px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:34px;
+}
+
+.message-box{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,.18);
+    border-radius:30px;
+    padding:40px;
+    backdrop-filter:blur(15px);
+    text-align:center;
+    line-height:2;
+    font-size:18px;
+}
+
+.timeline-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:30px;
+}
+
+.timeline-item{
+    background:rgba(255,255,255,.18);
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+}
+
+.timeline-item h3{
+    margin-bottom:20px;
+}
+
+.gallery-box{
+    display:flex;
+    justify-content:center;
+}
+
+.gallery-box img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:30px;
+    border:6px solid white;
+}
+
+.skill{
+    max-width:700px;
+    margin:30px auto;
+}
+
+.skill span{
+    display:block;
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.bar{
+    width:100%;
+    height:18px;
+    background:rgba(255,255,255,.3);
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    border-radius:30px;
+}
+
+.trust{
+    width:100%;
+    background:#00e676;
+}
+
+.respect{
+    width:100%;
+    background:#29b6f6;
+}
+
+.support{
+    width:100%;
+    background:#ab47bc;
+}
+
+.music{
+    text-align:center;
+}
+
+#musicBtn{
+    padding:18px 45px;
+    border:none;
+    border-radius:50px;
+    background:#ffffff;
+    color:#2196f3;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.ending{
+    text-align:center;
+    padding-bottom:120px;
+}
+
+.ending h1{
+    font-size:55px;
+    margin-bottom:25px;
+}
+
+.ending p{
+    font-size:22px;
+    line-height:2;
+}
